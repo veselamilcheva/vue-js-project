@@ -1,1 +1,1 @@
-# vue-js-project
+# Sample vue-js-project
