@@ -8,7 +8,7 @@
           <textarea name="" id="" cols="30" rows="3" class="form-control" v-model="quote"></textarea>
         </div>
         <div class="form-group col-sm-8 col-sm-offset-2 col-xs-12 col-md-6 col-md-offset-3">
-          <button class="btn-primary" @click.prevent="createNew($event)" :disabled="showAlert">Add Quote {{ showAlert }}</button>
+          <button class="btn-primary" @click.prevent="createNew($event)" :disabled="showAlert">Add Quote</button>
         </div>
       </form>
     </div>
