@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-   test qw
+    <app-user></app-user>
   </div>
 </template>
 
 <script>
+  import User from './components/User'
   export default {
+    components: {
+        'app-user': User
+    }
   }
 </script>
 
