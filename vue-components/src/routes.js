@@ -1,9 +1,27 @@
-import User from './components/user/User.vue';
-import UserStart from './components/user/UserStart.vue';
-import UserDetail from './components/user/UserDetail.vue';
-import UserEdit from './components/user/UserEdit.vue';
 import Home from './components/Home.vue';
 import Header from './components/header.vue';
+
+//loading routes lazily by creating new bundles and load them when need it 3rd param grouping by 'user'
+const User = resolve => {
+    require.ensure(['./components/user/User.vue'], () => {
+        resolve(require('./components/user/User.vue')) //like a promise that resolve the path that should be really used
+    })
+}
+const UserStart = resolve => {
+    require.ensure(['./components/user/UserStart.vue'], () => {
+        resolve(require('./components/user/UserStart.vue')) //like a promise that resolve the path that should be really used
+    })
+}
+const UserEdit = resolve => {
+    require.ensure(['./components/user/UserEdit.vue'], () => {
+        resolve(require('./components/user/UserEdit.vue')) //like a promise that resolve the path that should be really used
+    })
+}
+const UserDetail = resolve => {
+    require.ensure(['./components/user/UserDetail.vue'], () => {
+        resolve(require('./components/user/UserDetail.vue')) //like a promise that resolve the path that should be really used
+    })
+}
 
 
 
