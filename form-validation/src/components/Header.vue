@@ -4,6 +4,7 @@
       <a class="navbar-brand" href="#">
         <img
           width="50"
+          alt="logo"
           src="https://cdn1.vectorstock.com/i/thumb-large/95/10/bald-man-with-mustache-in-business-suit-ico-vector-1979510.jpg"
         />
       </a>
@@ -26,7 +27,7 @@
           <router-link tag="li" to="/user" activeClass="active" class="nav-item">
             <a class="nav-link">User</a>
           </router-link>
-          <router-link tag="li" to="/userinfo" activeClass="active" class="nav-item">
+          <router-link tag="li" to="/usersinfo" activeClass="active" class="nav-item">
             <a class="nav-link">Users Info</a>
           </router-link>
         </ul>
@@ -40,11 +41,11 @@ export default {
   name: 'app-header',
   data() {
     return {
-      
+
     }
   }
 }
 </script>
 
-<style scoped lang="scss" scoped>
+<style lang="scss" scoped>
 </style>
